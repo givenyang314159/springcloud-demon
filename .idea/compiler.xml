@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="micro-service-consumer-dept-80" />
+        <module name="micro-service-consumer-dept-feign-8080" />
+        <module name="micro-service-eureka-server-7001" />
+        <module name="micro-service-eureka-server-7002" />
+        <module name="micro-service-eureka-server-7003" />
+        <module name="micro-service-provider-dept-8001" />
+        <module name="micro-service-provider-dept-8002" />
+        <module name="micro-service-provider-dept-8003" />
+        <module name="micro-service-provider-dept-hystrix-8004" />
+        <module name="microservicecommon" />
+        <module name="microserviceproviderhystrixdept8004" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="micro-service-consumer-dept-80" target="1.8" />
+      <module name="micro-service-consumer-dept-feign-8080" target="1.8" />
+      <module name="micro-service-eureka-server-7001" target="1.8" />
+      <module name="micro-service-eureka-server-7002" target="1.8" />
+      <module name="micro-service-eureka-server-7003" target="1.8" />
+      <module name="micro-service-provider-dept-8001" target="1.8" />
+      <module name="micro-service-provider-dept-8002" target="1.8" />
+      <module name="micro-service-provider-dept-8003" target="1.8" />
+      <module name="micro-service-provider-dept-hystrix-8004" target="1.8" />
+      <module name="microservice-eureka-server-7001" target="1.8" />
+      <module name="microservice-eureka-server7001" target="1.8" />
+      <module name="microservice-provider-dept-8001" target="1.8" />
+      <module name="microservicecommon" target="1.8" />
+      <module name="microserviceproviderdept8001" target="1.8" />
+      <module name="microserviceproviderhystrixdept8004" target="1.8" />
+      <module name="servicercloud" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+  </component>
+</project>
