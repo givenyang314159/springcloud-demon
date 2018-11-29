@@ -1,0 +1,6 @@
+com\study\common\service\DeptClientService.class
+com\study\common\bean\Dept.class
+com\study\common\service\DeptClientServiceFallbackFactory$1.class
+com\study\common\bean\People.class
+com\study\common\service\DeptClientServiceFallbackFactory.class
+com\study\common\bean\Employee.class

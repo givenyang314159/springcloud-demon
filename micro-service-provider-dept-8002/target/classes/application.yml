@@ -1,0 +1,48 @@
+server:
+  port: 8002
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+  type-aliases-package: com.study.commonn.bean  # 所有Entity别名类所在包
+  mapper-locations:
+    classpath:mybatis/mappers/*.xml                       # mapper映射文件
+
+spring:
+   application:
+    name: microservicecloud-dept
+   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
+    url: jdbc:mysql://192.168.1.200:3306/clouddb02?useUnicode=true&amp;characterEncoding=UTF-8             # 数据库名称
+    username: root
+    password: 123456
+    dbcp2:
+      min-idle: 5                                           # 数据库连接池的最小维持连接数
+      initial-size: 5                                       # 初始化连接数
+      max-total: 5                                          # 最大连接数
+      max-wait-millis: 200
+                                                            # 等待连接获取的最大
+   devtools:                                                #开启自动部署
+     restart:
+       enabled: true
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7003:7003/eureka,http://eureka7002:7002/eureka
+  instance:
+    instance-id: microservicecloud-dept-8002
+    prefer-ip-address: true
+
+info:
+  app.name: microservicecloud-dept
+  company: com.study
+  build.artifactId: micro-service-provider-dept-8002
+  build.version: 1.0-SNAPSHOT
+
+
+
+
+
+
+
